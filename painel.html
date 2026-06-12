@@ -1,37 +1,93 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Painel de Informações</title>
+    <title>Painel de Informações - Rotas Oriximina</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <div class="Painel">
-        <h3>Painel de Rotas</h3>
-        <div class="info-linha">
-            <span class="data">Data: 01/01/2024</span>
-            <span class="hora">Hora: 12:00</span>
-        </div>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="relatorio.html">Relatório</a></li>
+                <li><a href="painel.html">Painel</a></li>
+                <li><a href="cadastro.html">Cadastro</a></li>
+            </ul>
+        </nav>
+    </header>
 
-        <div class="info-linha">
-            <h2>Rotas </h2>
-            <span class="linha">Linha: 123</span>
-            <p>Identificações de rota</p>
-        </div>
+    <main>
+        <h1 class="page-title">Painel de Rotas</h1>
+        <div class="system-layout">
+            <aside class="sidebar">
+                <h2>📍 Navegação</h2>
+                <ul>
+                    <li><a href="relatorio.html">📈 Relatórios</a></li>
+                    <li><a href="index.html">🚪 Sair</a></li>
+                </ul>
+            </aside>
 
-        <div class="info-linha">
-            <h2>origem -> destino</h2>
-            <span class="origem">Origem: Cidade A</span>
-            <span class="seta"> -> </span>
-            <span class="destino">Destino: Cidade B</span>
-        </div>
+            <div class="main-content">
+                <div class="info-linha">
+                    <span class="data"><strong>Data:</strong> 12/06/2026</span>
+                    <span class="hora"><strong>Hora:</strong> 14:30</span>
+                </div>
 
-        <div class="info-linha">
-            <h2>Paradas</h2>
-            <p>Identificações de parada</p>
+                <div class="table-container">
+                    <h2>Informações de Rotas</h2>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Linha</th>
+                                <th>Origem</th>
+                                <th>Destino</th>
+                                <th>Paradas</th>
+                                <th>Status</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>Linha 123</strong></td>
+                                <td>Cidade A</td>
+                                <td>Cidade B</td>
+                                <td>5 paradas</td>
+                                <td class="status-ativo">Ativo</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Linha 456</strong></td>
+                                <td>Centro</td>
+                                <td>Periferia</td>
+                                <td>8 paradas</td>
+                                <td class="status-ativo">Ativo</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Linha 789</strong></td>
+                                <td>Terminal</td>
+                                <td>Aeroporto</td>
+                                <td>3 paradas</td>
+                                <td class="status-em-analise">Em Análise</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                    </form>
+                </div>
+            </div>
         </div>
-    </div>
+    </main>
+
+    <footer>
+        <p>
+            &copy; 2026 Rotas Oriximina - Todos os direitos reservados<br>
+            Desenvolvido por Luiz Cauã | 
+            <a href="mailto:exemplo@educ.edu.br">Luizcaua357@gmail.com</a> |
+            <a href="https://www.instagram.com/luiz.cos05/" target="_blank">Instagram</a> |
+            <a href="https://www.facebook.com/profile.php?id=100088877208780" target="_blank">Facebook</a>
+        </p>
+    </footer>
 </body>
 </html>
