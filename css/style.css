@@ -3,23 +3,21 @@
     padding: 0;
     box-sizing: border-box;
 }
-
 body {
-    font-family: 'Arial', sans-serif;
-    line-height: 1.6;
-    color: #333;
-    background-color: #f4f4f4;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', sans-serif;
+    line-height: 1.7;
+    color: #4a5568;
+    background: linear-gradient(135deg, #f7fafc 0%, #edf2f7 100%);
+    min-height: 100vh;
 }
-
 header {
-    background-color: #1a5490;
-    padding: 1rem 0;
+    background: linear-gradient(135deg, #2563eb 0%, #1e40af 100%);
+    padding: 1.2rem 0;
     position: sticky;
     top: 0;
     z-index: 100;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 2px 12px rgba(37, 99, 235, 0.1);
 }
-
 nav ul {
     list-style: none;
     display: flex;
@@ -27,20 +25,18 @@ nav ul {
     gap: 2rem;
     flex-wrap: wrap;
 }
-
 nav a {
     color: white;
     text-decoration: none;
-    font-weight: bold;
-    padding: 0.5rem 1rem;
-    transition: background-color 0.3s ease;
+    font-weight: 500;
+    padding: 0.6rem 1.2rem;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    border-radius: 6px;
 }
-
 nav a:hover {
-    background-color: #0d3b6b;
-    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.1);
+    transform: translateY(-2px);
 }
-
 .banner {
     background: linear-gradient(135deg, #1a5490, #124a70);
     color: white;
@@ -48,7 +44,6 @@ nav a:hover {
     text-align: center;
     margin-bottom: 2rem;
 }
-
 .login-header {
     background: linear-gradient(135deg, #1a5490, #124a70);
     color: white;
@@ -56,34 +51,29 @@ nav a:hover {
     text-align: center;
     margin-bottom: 2rem;
 }
-
 h1 {
     color: #ffffff;
     margin-bottom: 1.5rem;
     border-bottom: 3px solid #2980b9;
     padding-bottom: 0.5rem;
 }
-
 h2 {
     color: #2980b9;
     margin-top: 1.5rem;
     margin-bottom: 1rem;
 }
-
 h3 {
     color: #ffffff;
     margin-bottom: 1.5rem;
     border-bottom: 3px solid #2980b9;
     padding-bottom: 0.5rem;
 }
-
 .cards {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 2rem;
     margin: 2rem 0;
 }
-
 .card {
     background-color: white;
     padding: 1.5rem;
@@ -93,17 +83,14 @@ h3 {
     text-align: center;
     border-top: 5px solid #2980b9;
 }
-
 .card:hover {
     transform: translateY(-10px);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
-
 .card h2 {
     margin-bottom: 1rem;
     color: #1a5490;
 }
-
 .card img {
     width: auto;
     height: 200px;
@@ -111,7 +98,6 @@ h3 {
     border-radius: 15px;
     margin-bottom: 1rem;
 }
-
 .card p {
     margin-bottom: 1.5rem;
     color: #666;
@@ -131,22 +117,19 @@ label {
     font-weight: bold;
     color: #333;
 }
-
 button {
-    background-color: #1a5490;
-    color: white;
-    border: none;
-    padding: 0.75rem 1.5rem;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 1rem;
-    transition: background-color 0.3s ease;
+ background-color: #1a5490;
+ color: white;
+border: none;
+padding: 0.75rem 1.5rem;
+border-radius: 5px;
+ cursor: pointer;
+font-size: 1rem;
+ transition: background-color 0.3s ease;
 }
-
 button:hover {
     background-color: #0d3b6b;
 }
-
 .form-container {
     display: flex;
     justify-content: center;
@@ -154,7 +137,6 @@ button:hover {
     min-height: 70vh;
     padding: 2rem;
 }
-
 .login-form {
     background-color: white;
     padding: 2rem;
@@ -164,20 +146,17 @@ button:hover {
     width: 100%;
     text-align: center;
 }
-
 .form-group {
     margin-bottom: 1.5rem;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-
 .form-group label {
     margin-bottom: 0.5rem;
     font-weight: bold;
     color: #1a5490;
 }
-
 .form-group input {
     width: 100%;
     max-width: 300px;
@@ -186,14 +165,12 @@ button:hover {
     border-radius: 8px;
     font-size: 1rem;
 }
-
 .form-group input:focus {
     outline: none;
     border-color: #1a5490;
     background-color: white;
     box-shadow: 0 0 0 3px rgba(26, 84, 144, 0.1);
 }
-
 .button-group {
     display: flex;
     gap: 1rem;
@@ -201,7 +178,6 @@ button:hover {
     margin-top: 2.5rem;
     flex-wrap: wrap;
 }
-
 .button-group button {
     flex: 1;
     max-width: 170px;
@@ -213,29 +189,24 @@ button:hover {
     cursor: pointer;
     transition: all 0.3s ease;
 }
-
 .button-group button[type="submit"] {
     background: linear-gradient(135deg, #1a5490 0%, #0d3b6b 100%);
     color: white;
 }
-
 .button-group button[type="submit"]:hover {
     background: linear-gradient(135deg, #0d3b6b 0%, #082856 100%);
     transform: translateY(-2px);
     box-shadow: 0 8px 20px rgba(26, 84, 144, 0.3);
 }
-
 .button-group button[type="button"] {
     background: linear-gradient(135deg, #6c757d 0%, #5a6268 100%);
     color: white;
 }
-
 .button-group button[type="button"]:hover {
     background: linear-gradient(135deg, #5a6268 0%, #495057 100%);
     transform: translateY(-2px);
     box-shadow: 0 8px 20px rgba(108, 117, 125, 0.3);
 }
-
 .page-title {
     text-align: center;
     font-size: 3rem;
@@ -245,7 +216,6 @@ button:hover {
     letter-spacing: 1px;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.05);
 }
-
 footer {
     background-color: #1a5490;
     color: white;
@@ -253,14 +223,132 @@ footer {
     text-align: center;
     margin-top: auto;
 }
-
 footer a {
     color: #b3d9ff;
     text-decoration: none;
     transition: all 0.3s ease;
 }
-
 footer a:hover {
     color: #ffffff;
     text-decoration: underline;
+}
+.sidebar {
+    width: 250px;
+    background-color: #004b87;
+    padding: 2rem;
+    color: white;
+}
+.sidebar h2 {
+    color: white;
+    margin-bottom: 2rem;
+    border: none;
+}
+.sidebar ul {
+    list-style: none;
+}
+.sidebar li {
+    margin-bottom: 1rem;
+}
+.sidebar a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: opacity 0.3s ease;
+}
+.sidebar a:hover {
+    opacity: 0.8;
+}
+.system-layout {
+    display: flex;
+    min-height: 100vh;
+}
+.main-content {
+    flex: 1;
+    padding: 2rem;
+    background: linear-gradient(135deg, #f7fafc 0%, #edf2f7 100%);
+}
+.table-container {
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 2rem 0;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+table thead {
+    background-color: #004b87;
+    color: white;
+}
+table th {
+    padding: 1rem;
+    text-align: left;
+    font-weight: 600;
+}
+table td {
+    padding: 1rem;
+    border-bottom: 1px solid #e2e8f0;
+}
+table tbody tr:hover {
+    background-color: #f8f9fa;
+}
+.status-em-analise {
+    color: #f6a623;
+    font-weight: bold;
+}
+.status-ativo {
+    color: #10b981;
+    font-weight: bold;
+}
+.status-inativo {
+    color: #ef4444;
+    font-weight: bold;
+}
+.form-title {
+    color: #004b87;
+    margin-bottom: 1rem;
+}
+.feedback-form {
+    margin-top: 2rem;
+    max-width: 100%;
+}
+.input-group {
+    margin-bottom: 1.5rem;
+    display: flex;
+    flex-direction: column;
+}
+.input-group label {
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+    color: #374151;
+}
+.input-group input,
+.input-group select {
+    padding: 0.75rem;
+    border: 2px solid #e2e8f0;
+    border-radius: 6px;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+.input-group input:focus,
+.input-group select:focus {
+    outline: none;
+    border-color: #2563eb;
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+}
+.btn {
+    background: linear-gradient(135deg, #2563eb 0%, #1e40af 100%);
+    color: white;
+    padding: 0.85rem 1.5rem;
+    border: none;
+    border-radius: 6px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 16px rgba(37, 99, 235, 0.2);
 }
