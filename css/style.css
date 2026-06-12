@@ -76,12 +76,15 @@ h3 {
 }
 .card {
     background-color: white;
-    padding: 1.5rem;
+    padding: 0;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     text-align: center;
     border-top: 5px solid #2980b9;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
 }
 .card:hover {
     transform: translateY(-10px);
@@ -90,17 +93,23 @@ h3 {
 .card h2 {
     margin-bottom: 1rem;
     color: #1a5490;
+    padding: 1.5rem 1.5rem 0.5rem;
 }
 .card img {
-    width: auto;
+    width: 100%;
     height: 200px;
     object-fit: cover;
-    border-radius: 15px;
-    margin-bottom: 1rem;
+    border-radius: 0;
+    margin-bottom: 0;
+    display: block;
 }
 .card p {
-    margin-bottom: 1.5rem;
+    margin-bottom: 1rem;
     color: #666;
+    padding: 0 1.5rem;
+}
+.card button {
+    margin: 0 1.5rem 1.5rem;
 }
 
 input {
@@ -400,4 +409,23 @@ table tbody tr:hover {
 .cards-section {
     padding: 3rem 2rem;
     background: linear-gradient(135deg, #f7fafc 0%, #edf2f7 100%);
+}
+
+.info-linha {
+    display: flex;
+    gap: 2rem;
+    margin-bottom: 1.5rem;
+    flex-wrap: wrap;
+}
+
+.data, .hora, .linha, .origem, .destino, .seta {
+    font-weight: 500;
+    color: #374151;
+}
+
+.data, .hora {
+    padding: 0.75rem 1.5rem;
+    background: #e0e7ff;
+    border-radius: 8px;
+    border-left: 4px solid #2563eb;
 }
