@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Feedback - Rota Oriximiná</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <div class="system-layout">
+        <aside class="sidebar">
+            <h2>📍 Rota Oriximiná</h2>
+            <ul>
+                <li><a href="painel.html">📊 Painel Inicial</a></li>
+                <li><a href="cadastro.html">➕ Cadastrar Rota</a></li>
+                <!-- Link alterado para a página de Feedback -->
+                <li><a href="feedback.html" style="color:white; background:#004b87;">💬 Feedback dos Usuários</a></li>
+                <li><a href="index.html">🚪 Sair</a></li>
+            </ul>
+        </aside>
+
+        <main class="main-content">
+            <h2>Avaliações e Sugestões</h2>
+            <p>Acompanhe o que os passageiros estão relatando sobre as rotas de transporte do município para melhorar a mobilidade.</p>
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Data</th>
+                            <th>Usuário</th>
+                            <th>Rota Avaliada</th>
+                            <th>Nota</th>
+                            <th>Comentário / Sugestão</th>
+                            <th>Status do Atendimento</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>12/06/2026</td>
+                            <td>Ana Clara</td>
+                            <td>Linha Universidades (Centro - UFOPA)</td>
+                            <td>⭐⭐⭐⭐</td>
+                            <td>O ônibus passou no horário, mas estava muito lotado no horário de pico.</td>
+                            <td style="color: #f6a623; font-weight: bold;">Em Análise</td>
+                        </tr>
+                        <tr>
+                            <td>11/06/2026</td>
+                            <td>Marcos</td>
+                            <td>Expresso Bairros</td>
+                            <td>⭐⭐⭐⭐⭐</td>
+                            <td>Aplicativo ajudou muito a não perder a condução hoje. Excelente iniciativa!</td>
+                            <td class="status-ativo">Concluído</td>
+                        </tr>
+                        <tr>
+                            <td>10/06/2026</td>
+                            <td>João Pedro</td>
+                            <td>Travessia Fluvial</td>
+                            <td>⭐⭐</td>
+                            <td>O barco atrasou mais de 30 minutos no porto. Precisam atualizar o status no sistema.</td>
+                            <td class="status-inativo">Pendente</td>
+                        </tr>
+                        <tr>
+                            <td>09/06/2026</td>
+                            <td>Maria Silva</td>
+                            <td>Linha Comercial</td>
+                            <td>⭐⭐⭐⭐</td>
+                            <td>Gostei da clareza das informações, mas sugiro adicionar mais um horário na rota do Mercado.</td>
+                            <td style="color: #f6a623; font-weight: bold;">Em Análise</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            
+            <!-- Formulário opcional para envio de resposta ao feedback -->
+            <div class="form-container" style="margin-top: 2rem; max-width: 100%;">
+                <h3 style="color: #004b87; margin-bottom: 1rem;">Responder ao Feedback</h3>
+                <form action="#" method="GET">
+                    <div class="input-group">
+                        <label for="idFeedback">Selecionar Usuário para Resposta</label>
+                        <select id="idFeedback">
+                            <option value="1">Ana Clara - Linha Universidades</option>
+                            <option value="2">João Pedro - Travessia Fluvial</option>
+                            <option value="3">Maria Silva - Linha Comercial</option>
+                        </select>
+                    </div>
+                    <div class="input-group">
+                        <label for="resposta">Mensagem do Gestor</label>
+                        <input type="text" id="resposta" placeholder="Digite a resposta oficial do sistema..." required>
+                    </div>
+                    <button type="button" class="btn">Enviar Resposta</button>
+                </form>
+            </div>
+
+        </main>
+    </div>
+
+</body>
+</html>
