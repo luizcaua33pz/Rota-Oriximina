@@ -351,4 +351,53 @@ table tbody tr:hover {
 .btn:hover {
     transform: translateY(-2px);
     box-shadow: 0 8px 16px rgba(37, 99, 235, 0.2);
+    text-decoration: none;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 1.5rem;
+    margin-bottom: 0;
+}
+
+.about {
+    padding: 3rem 2rem;
+    background: white;
+    margin: 2rem 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+.about-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.section-header {
+    margin-bottom: 1.5rem;
+}
+
+.section-header h2 {
+    font-size: 2rem;
+    margin-top: 0;
+}
+
+.about-text {
+    line-height: 1.8;
+    margin-bottom: 1rem;
+}
+
+.about-text p {
+    color: #4a5568;
+    margin-bottom: 1rem;
+    font-size: 1.05rem;
+}
+
+.cards-section {
+    padding: 3rem 2rem;
+    background: linear-gradient(135deg, #f7fafc 0%, #edf2f7 100%);
 }
