@@ -1,33 +1,22 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
-
-<head>
-    <meta charset="UTF-8">
-    <title>Feedback - Rota Oriximiná</title>
-    <!-- Ligação com o CSS externo obrigatório -->
-    <link rel="stylesheet" href="css/style.css">
+<!doctype html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pt-BR" xml:lang="pt-BR">
+    <head>
+        <meta charset="utf-8">
+        <title>Rotas Oriximina</title>
+ <link rel="stylesheet" href="css/style.css">
 </head>
-
 <body>
-
     <div class="system-layout">
-        <!-- Barra Lateral Atualizada -->
         <aside class="sidebar">
-            <h2>📍 Rota Oriximiná</h2>
-            <ul>
-                <li><a href="painel.html">📊 Painel Inicial</a></li>
-                <li><a href="cadastro.html">➕ Cadastrar Rota</a></li>
-                <!-- Link alterado para a página de Feedback -->
-                <li><a href="feedback.html" style="color:white; background:#004b87;">💬 Feedback dos Usuários</a></li>
-                <li><a href="index.html">🚪 Sair</a></li>
+        <h2>📍 Rota Oriximiná</h2>
+        <ul>
+        <li><a href="painel.html">📊 Painel Inicial</a></li>
+            <li><a href="index.html">🚪 Sair</a></li>
             </ul>
         </aside>
-
         <main class="main-content">
             <h2>Avaliações e Sugestões</h2>
             <p>Acompanhe o que os passageiros estão relatando sobre as rotas de transporte do município para melhorar a mobilidade.</p>
-
-            <!-- Tabela de dados fictícios para cumprir o requisito da atividade -->
             <div class="table-container">
                 <table>
                     <thead>
@@ -47,7 +36,7 @@
                             <td>Linha Universidades (Centro - UFOPA)</td>
                             <td>⭐⭐⭐⭐</td>
                             <td>O ônibus passou no horário, mas estava muito lotado no horário de pico.</td>
-                            <td style="color: #f6a623; font-weight: bold;">Em Análise</td>
+                            <td class="status-em-analise">Em Análise</td>
                         </tr>
                         <tr>
                             <td>11/06/2026</td>
@@ -71,15 +60,15 @@
                             <td>Linha Comercial</td>
                             <td>⭐⭐⭐⭐</td>
                             <td>Gostei da clareza das informações, mas sugiro adicionar mais um horário na rota do Mercado.</td>
-                            <td style="color: #f6a623; font-weight: bold;">Em Análise</td>
+                            <td class="status-em-analise">Em Análise</td>
                         </tr>
                     </tbody>
                 </table>
             </div>
 
             <!-- Formulário opcional para envio de resposta ao feedback -->
-            <div class="form-container" style="margin-top: 2rem; max-width: 100%;">
-                <h3 style="color: #004b87; margin-bottom: 1rem;">Responder ao Feedback</h3>
+            <div class="feedback-form">
+                <h3 class="form-title">Responder ao Feedback</h3>
                 <form action="#" method="GET">
                     <div class="input-group">
                         <label for="idFeedback">Selecionar Usuário para Resposta</label>
@@ -93,13 +82,10 @@
                         <label for="resposta">Mensagem do Gestor</label>
                         <input type="text" id="resposta" placeholder="Digite a resposta oficial do sistema..." required>
                     </div>
-                    <button type="button" class="btn">Enviar Resposta</button>
-                </form>
-            </div>
-
-        </main>
-    </div>
-
+ <button type="button" class="btn">Enviar Resposta</button>
+</form>
+ </div>
+</main>
+</div>
 </body>
-
 </html>
