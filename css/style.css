@@ -16,7 +16,8 @@ header {
     padding: 1rem 0;
     position: sticky;
     top: 0;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    z-index: 100;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
 
 nav ul {
@@ -24,6 +25,7 @@ nav ul {
     display: flex;
     justify-content: center;
     gap: 2rem;
+    flex-wrap: wrap;
 }
 
 nav a {
@@ -46,16 +48,15 @@ nav a:hover {
     text-align: center;
     margin-bottom: 2rem;
 }
-div.Painel {
-    background-color: #1a5490;
-    color: white;
-    padding: 6rem;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    margin: 2rem auto;
-    max-width: 800px;
 
+.login-header {
+    background: linear-gradient(135deg, #1a5490, #124a70);
+    color: white;
+    padding: 3rem 2rem;
+    text-align: center;
+    margin-bottom: 2rem;
 }
+
 h1 {
     color: #ffffff;
     margin-bottom: 1.5rem;
@@ -68,6 +69,7 @@ h2 {
     margin-top: 1.5rem;
     margin-bottom: 1rem;
 }
+
 h3 {
     color: #ffffff;
     margin-bottom: 1.5rem;
@@ -113,4 +115,152 @@ h3 {
 .card p {
     margin-bottom: 1.5rem;
     color: #666;
+}
+
+input {
+    width: auto;
+    padding: 0.75rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+label {
+    display: block;
+    margin-bottom: auto;
+    font-weight: bold;
+    color: #333;
+}
+
+button {
+    background-color: #1a5490;
+    color: white;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0d3b6b;
+}
+
+.form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 70vh;
+    padding: 2rem;
+}
+
+.login-form {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+    text-align: center;
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form-group label {
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+    color: #1a5490;
+}
+
+.form-group input {
+    width: 100%;
+    max-width: 300px;
+    padding: 0.85rem 1rem;
+    border: 2px solid #e0e0e0;
+    border-radius: 8px;
+    font-size: 1rem;
+}
+
+.form-group input:focus {
+    outline: none;
+    border-color: #1a5490;
+    background-color: white;
+    box-shadow: 0 0 0 3px rgba(26, 84, 144, 0.1);
+}
+
+.button-group {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    margin-top: 2.5rem;
+    flex-wrap: wrap;
+}
+
+.button-group button {
+    flex: 1;
+    max-width: 170px;
+    padding: 0.9rem 1.5rem;
+    font-weight: bold;
+    font-size: 1rem;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.button-group button[type="submit"] {
+    background: linear-gradient(135deg, #1a5490 0%, #0d3b6b 100%);
+    color: white;
+}
+
+.button-group button[type="submit"]:hover {
+    background: linear-gradient(135deg, #0d3b6b 0%, #082856 100%);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(26, 84, 144, 0.3);
+}
+
+.button-group button[type="button"] {
+    background: linear-gradient(135deg, #6c757d 0%, #5a6268 100%);
+    color: white;
+}
+
+.button-group button[type="button"]:hover {
+    background: linear-gradient(135deg, #5a6268 0%, #495057 100%);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(108, 117, 125, 0.3);
+}
+
+.page-title {
+    text-align: center;
+    font-size: 3rem;
+    color: #1a5490;
+    margin: 2rem 0 1rem 0;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+footer {
+    background-color: #1a5490;
+    color: white;
+    padding: 2rem;
+    text-align: center;
+    margin-top: auto;
+}
+
+footer a {
+    color: #b3d9ff;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+footer a:hover {
+    color: #ffffff;
+    text-decoration: underline;
 }
